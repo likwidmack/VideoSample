@@ -1,13 +1,13 @@
 {
   "name": "video-spa",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Video Development Test Pages",
   "private": true,
   "main": "index.js",
   "config": {
     "port": 9005,
-    "build": "6975556",
-    "timestamp": 1490418815346
+    "build": "6852448",
+    "timestamp": 1490418964811
   },
   "engines": {
     "node": "0.12.7",
