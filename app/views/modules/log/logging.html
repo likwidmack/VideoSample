@@ -1,0 +1,81 @@
+<div>
+    <h5>LOGGING</h5>
+    <div class="toggle-button-block expanded button-group" data-bind="foreach:parameterOptions">
+        <label class="button notify" data-bind="attr:{for:'logging-option-'+$data},
+            css:{selected:($parent.selectedParameterOption() === $data)}">
+            <input type="radio" name="log-parameter-options"
+                   data-bind="attr:{id:'logging-option-'+$data},
+                       checkedValue:$data,
+                       checked:$parent.selectedParameterOption">
+            <span data-bind="text:$data"></span>
+        </label>
+    </div>
+    <div data-bind="foreach:parameters">
+        <span>
+            <span data-bind="text:name"></span>
+            [<span data-bind="text:total"></span>]
+            <!-- ko if:$parent.filteredCount() && $parent.selectedParameterOption() == name -->
+            [<span data-bind="text:$parent.filteredCount"></span> Found]
+            <!-- /ko -->
+        </span>
+    </div>
+    <button class="expanded button" data-bind="click:search">Search</button>
+    <section>
+        <div class="select-inline-block">
+            <div>
+                <label data-bind="attr:{for:'logging-type-all'}">
+                    <input type="checkbox" data-bind="attr:{id:'logging-type-all'},
+                                                    checked:allTypes">
+                    <span>ALL</span>
+                </label>
+            </div>
+            <!-- ko foreach:parameterTypes -->
+            <div>
+                <label data-bind="attr:{for:'logging-type-'+$data}">
+                    <input type="checkbox" data-bind="attr:{id:'logging-type-'+$data},
+                                                    checkedValue:$data,
+                                                    checked:$parent.selectedTypes">
+                    <span data-bind="text:$data"></span>
+                </label>
+            </div>
+            <!-- /ko -->
+        </div>
+        <hr>
+        <div class="select-inline-block">
+            <div>
+                <label data-bind="attr:{for:'logging-instance-all'}">
+                    <input type="checkbox" data-bind="attr:{id:'logging-instance-all'},
+                                                    checked:allInstances">
+                    <span>ALL</span>
+                </label>
+            </div>
+            <!-- ko foreach:parameterInstances -->
+            <div>
+                <label data-bind="attr:{for:'logging-instance-'+$data}">
+                    <input type="checkbox" data-bind="attr:{id:'logging-instance-'+$data},
+                                                    checkedValue:$data,
+                                                    checked:$parent.selectedInstances">
+                    <span data-bind="text:$data"></span>
+                </label>
+            </div>
+            <!-- /ko -->
+        </div>
+    </section>
+    <hr>
+    <section data-bind="foreach:filteredPrint">
+        <div class="row">
+            <div class="toggle-button-block columns shrink">
+                <label class="small button" data-bind="attr:{for:'input_'+performance}, css:{selected:toggle}">
+                    <input type="checkbox" data-bind="checked:toggle,attr:{id:'input_'+performance}"/>
+                    <span data-bind="text:toggle() ? 'hide' : 'details'"></span>
+                </label>
+            </div>
+            <div class="colums">
+                <span data-bind="text:time"></span>
+                [<span data-bind="text:type"></span>]
+                <span data-bind="text:instance"></span>
+            </div>
+        </div>
+        <div class="horizontal-constraint" data-bind="visible:toggle, html:dependents"></div>
+    </section>
+</div>

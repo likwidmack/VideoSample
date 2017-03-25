@@ -1,0 +1,56 @@
+<div data-bind="with:player">
+    <div id="player_section" class="clearfix">
+        <div id="player_api_panel" class="row clearfix">
+            <div class="small-12 columns small-text-center medium-text-right">
+                <div class="small button-group float-right">
+                    <button class="button" id="btnPlay" data-bind="click:play">Play</button>
+                    <button class="button" id="btnPause" data-bind="click:pause">Pause</button>
+                    <button class="button" id="btnNext" data-bind="click:nextClick">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="player_parent">
+            <div id="sub_player_parent">
+                <div id="playerOne" class="moveBack"></div>
+                <div class="video-poster">
+                    <a class="thumbnail" id="player_poster" data-bind="with:asset">
+                        <img alt="playerOne_Img Loading..." src="/"
+                             data-bind="attr:{src:image,title:title},click:$root.posterClick"/>
+                        <div class="videoLoadOverlay fixed" data-bind="fadeVisible:$parent.loadingMedia">
+                            <div>Loading....</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="player_other_section" data-bind="css:{hide:!($root.toggleContainers() === 'body')}">
+        <!-- ko with:player -->
+        <div id="controlrack_container" data-bind="visible:controlrack">
+            {% include "controlrack.html" %}
+        </div>
+        <!-- /ko -->
+        <div class="row">
+            <div id="player_asset_section" class="small-12 large-6 columns">
+                {% include "asset_detail.html" %}
+            </div>
+
+            <div class="small-12 large-6 columns">
+                <div id="player_version_container">
+                    <span class="notify label">Version:
+                        <span data-bind="text:player_version"></span></span>
+                    <span class="notify label">Build Date:
+                        <span data-bind="text:player_datetime"></span></span>
+                    <span class="notify label">AdManager: <span data-bind="text:fw_version"></span></span>
+                </div>
+                <div id="player_log_container">
+                    <h4>Player events: <span id="playerEvents"></span></h4>
+                    {% include "events.html" %}
+                </div>
+            </div>
+        </div>
+        <hr class="clearfix">
+    </div>
+</div>

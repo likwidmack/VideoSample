@@ -1,0 +1,321 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Simple Simon || {% parent %}
+{% endblock %}
+
+{% block css %}
+{% parent %}
+{% include "partials/styles.html" %}
+<style>
+    #events_container {
+        height: 100%;
+        max-height: 100em;
+        overflow-y: auto;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+</style>
+{% endblock %}
+
+{% block js %}
+{% parent %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script type="text/javascript" src="/libs/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/libs/knockout/dist/knockout.js"></script>
+{% if hls %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+{% endif %}
+{% endblock %}
+
+{% block header %}
+<nav class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">
+                <h2 class="show-for-large">Simple Simon</h2>
+                <h3 class="show-for-medium-only">Simple Simon</h3>
+                <h4 class="show-for-small-only">Simple Simon</h4>
+            </li>
+            {% if hls %}
+            <li><strong>HLS</strong></li>
+            {% endif %}
+        </ul>
+    </div>
+
+    <div class="top-bar-right">
+        <ul class="menu"></ul>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="expanded row">
+    <div class="small-12 large-6 columns">
+        <section class="panel callout">
+            <input id="inputURL" type="url" placeholder="Enter Asset Url" data-bind="textInput:source"/>
+            <div class="button-group">
+                <button id="btnLoad" class="secondary button" data-bind="click:load">Load Source</button>
+                <button id="btnPlay" class="success button" data-bind="click:play">Play</button>
+                <button id="btnPause" class="alert button" data-bind="click:pause">Pause</button>
+                <button id="btnReload" class="button" data-bind="click:reload">RELOAD</button>
+                <button id="btnStartLoad" class="button" data-bind="click:refresh">Refresh
+                    <small>(start load)</small>
+                </button>
+            </div>
+        </section>
+        <section>
+            <video id="videoId"></video>
+        </section>
+    </div>
+    <div class="small-12 large-6 columns">
+        <div id="events_container" class="row callout secondary">
+            <div class="small-6 columns">
+                <strong>HLS EVENTS</strong>
+                <ol data-bind="foreach:hls_events" reversed>
+                    <li>
+                        <div data-bind="style:{background:css}">
+                            <label>
+                                <b data-bind="text:name"></b>
+                                <span data-bind="text:time"></span>
+                            </label>
+                            <span data-bind="text:addl"></span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="small-6 columns">
+                <strong>VIDEO EVENTS</strong>
+                <ol data-bind="foreach:video_events" reversed>
+                    <li>
+                        <div data-bind="style:{background:css}">
+                            <label>
+                                <b data-bind="text:name"></b>
+                                <span data-bind="text:time"></span>
+                            </label>
+                            <span data-bind="text:addl"></span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<script>
+    if(!Hls || !Hls.isSupported()){
+        $('ul.dropdown.menu').append('<li><strong style="color:rgb(180,0,0)">HLS NOT SUPPORTED</strong></li>');
+    }
+
+    var vm, videoEvents = [],
+            hls_events = {
+                'MEDIA_ATTACHED': Hls.Events.MEDIA_ATTACHED
+                , 'MEDIA_ATTACHING': Hls.Events.MEDIA_ATTACHING
+                , 'MEDIA_DETACHED': Hls.Events.MEDIA_DETACHED
+                , 'MEDIA_DETACHING': Hls.Events.MEDIA_DETACHING
+                , 'MANIFEST_LOADED': Hls.Events.MANIFEST_LOADED
+                , 'MANIFEST_LOADING': Hls.Events.MANIFEST_LOADING
+                , 'MANIFEST_PARSED': Hls.Events.MANIFEST_PARSED
+                , 'LEVEL_LOADED': Hls.Events.LEVEL_LOADED
+                , 'LEVEL_LOADING': Hls.Events.LEVEL_LOADING
+                , 'LEVEL_UPDATED': Hls.Events.LEVEL_UPDATED
+                , 'FRAG_LOADED': Hls.Events.FRAG_LOADED
+                , 'FRAG_PARSING_METADATA': Hls.Events.FRAG_PARSING_METADATA
+                , 'FRAG_BUFFERED': Hls.Events.FRAG_BUFFERED
+                , 'DESTROYING': Hls.Events.DESTROYING
+                , 'ERROR': Hls.Events.ERROR
+            };
+
+    var $video = $('#videoId'),
+            video = $video[0];
+
+    $video.prop({
+        'preload': 'metadata',
+        'x-webkit-airplay': 'allow',
+        'controls': true
+    });
+    $video.css({
+        height: '100%',
+        width: '100%'
+    });
+
+    function viewmodel() {
+        var _this = this;
+        this.hls = null;
+        this.source = ko.observable();
+        this.video_events = ko.observableArray([]);
+        this.hls_events = ko.observableArray([]);
+
+        this.attach = function () {
+            // MEDIA_ATTACHED event is fired by hls object once MediaSource is ready
+            var attachedHandler = function () {
+                _this.hls.off(Hls.Events.MEDIA_ATTACHED, attachedHandler);
+                console.debug("video and hls.js are now bound together !");
+                _this.load();
+            };
+            _this.hls.on(Hls.Events.MEDIA_ATTACHED, attachedHandler);
+            _this.hls.attachMedia(video);
+        };
+
+        this.load = function () {
+            if (!_this.hls)return;
+            var parsedHandler = function (event, data) {
+                _this.hls.off(Hls.Events.MANIFEST_PARSED, parsedHandler);
+                console.debug("manifest loaded, found " + data.levels.length + " quality level", data);
+                _this.play();
+            };
+
+            if (!!_this.source()) {
+                _this.hls.loadSource(_this.source());
+                _this.hls.on(Hls.Events.MANIFEST_PARSED, parsedHandler);
+            }
+        };
+
+        this.play = function () {
+            video.play();
+        };
+
+        this.pause = function () {
+            video.pause();
+        };
+
+        this.refresh = function () {
+            _this.hls.startLoad();
+        };
+
+        this.reload = function () {
+            // MEDIA_ATTACHED event is fired by hls object once MediaSource is ready
+            var detachedHandler = function () {
+                _this.hls.off(Hls.Events.MEDIA_DETACHED, detachedHandler);
+                console.debug("video and hls.js are now bound together !");
+                _this.attach();
+            };
+            _this.hls.on(Hls.Events.MEDIA_DETACHED, detachedHandler);
+            _this.hls.detachMedia();
+        };
+
+        this.init = function () {
+            if (('{{hls}}' == 'true')) {
+                if (Hls.isSupported()) {
+                    _this.hls = new Hls({debug: true});
+                    // bind them together
+                    _this.attach();
+                }
+            }
+
+            for (var prop in video) {
+                if (prop.substring(0, 2) === 'on') {
+                    var _eName = prop.slice(2);
+                    if ((/(^key|mouse|drag|pointer)/).test(_eName)) continue;
+                    videoEvents.push(_eName);
+                }
+            }
+            var i = videoEvents.length;
+            while (i--) {
+                video.addEventListener(videoEvents[i], eventHandler);
+                //console.log('event added', videoEvents[i]);
+            }
+
+            for (var prop in hls_events) {
+                _this.hls.on(hls_events[prop], hlseHandler);
+            }
+
+        };
+    }
+
+    $(function () {
+        vm = new viewmodel();
+        ko.applyBindings(vm);
+
+        vm.init();
+    });
+
+    function hlseHandler(event, data) {
+        var ts = (new Date()).getTime(),
+                css = 'rgba(255,255,255,0.5)';
+        var type = (data && data.type) || false,
+                details = (data && data.details) || false,
+                addl = '';
+        if (!!type) addl += type;
+        if (typeof details === 'string')
+            addl += ((addl.length ? ' :: ' : '') + details);
+
+        if ((/error/).test((event).toLowerCase())) {
+            css = 'rgba(200,0,0,0.5)';
+        } else if ((/tached|parsed/).test((event).toLowerCase())) {
+            css = 'rgba(0,0,160,0.2)';
+        }
+
+        vm.hls_events.unshift({
+            name: event,
+            timestamp: ts,
+            time: getTimeString(new Date(ts)),
+            addl: addl,
+            css: css
+        });
+
+        console.info('HLS Event', event, data, getTimeString(new Date(ts)));
+    }
+
+    function eventHandler(e) {
+        var target = e.target;
+        var ts = (new Date()).getTime(),
+                css = 'rgba(255,255,255,0.5)';
+        var lastItem = (vm.video_events())[0];
+
+        if ((/error|abort/).test((e.type).toLowerCase())) {
+            css = 'rgba(200,0,0,0.5)';
+        } else if ((/stall|suspend/).test((e.type).toLowerCase())) {
+            css = 'rgba(200,200,0,0.5)';
+        } else if ((/emptied/).test((e.type).toLowerCase())) {
+            css = 'rgba(0,0,160,0.2)';
+        }
+
+        if (lastItem && (lastItem.name === e.type)) {
+            lastItem.time = getTimeString(new Date(ts));
+            lastItem.pre.push(ts);
+        } else {
+            vm.video_events.unshift({
+                name: e.type,
+                timestamp: ts,
+                time: getTimeString(new Date(ts)),
+                addl: target.error,
+                pre: [ts],
+                css: css
+            });
+        }
+    }
+    function getTimeString(date, UTC) {
+        date = __isValidDate(date);
+
+        var h, m, s, _get = 'get';
+        if (UTC) _get += 'UTC';
+        var t = {
+            hours: date[_get + 'Hours'](),
+            minutes: date[_get + 'Minutes'](),
+            seconds: date[_get + 'Seconds'](),
+            milliseconds: date[_get + 'Milliseconds']()
+        };
+        h = __formattime(t.hours);
+        m = __formattime(t.minutes);
+        s = __formattime(t.seconds);
+
+        return ([h, m, s]).join(':') + '.' + t.milliseconds;
+    }
+
+    function __formattime(time) {
+        var len = ('' + time).length;
+        return len === 1 ? '0' + time : time;
+    }
+
+    function __isValidDate(date) {
+        date = new Date(date);
+        if (!((Object.prototype.toString.call(date) === '[object Date]')
+                && isFinite(date))) date = new Date();
+        return date;
+    }
+
+</script>
+{% endblock %}

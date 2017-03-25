@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Legacy Test Page || {% parent %}
+{% endblock %}
+
+{% block css %}
+{% include "partials/styles.html" %}
+<link href="/styles/old/mainPlayer.css" rel="stylesheet" type="text/css" media="all"/>
+{% if useCustomControlRack %}
+<link href="/styles/old/customControlRack.css" rel="stylesheet" type="text/css" media="all"/>
+{% endif %}
+{% endblock %}
+
+{% block js %}
+{% if configPath %}
+<script type="text/javascript">window.useCustomControlRack = ('{{useCustomControlRack}}' == 'true');</script>
+<script src="{{ configPath }}" type="text/javascript"></script>
+{% endif %}
+{% include "partials/scripts.html" %}
+<script type="text/javascript" src="/libs/jquery/dist/jquery.js"></script>
+<script src="/js/old/logEvents.js" type="text/javascript"></script>
+<script src="/js/misc/player_config.js" type="text/javascript"></script>
+<script src="{{sourcePath}}" type="text/javascript"></script>
+{% if useCustomControlRack %}
+<script src='/js/old/customControlRack.js' type="text/javascript"></script>
+{% endif %}
+<script src="/js/old/mainPlayer.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block header %}
+<nav class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">
+                <h3 class="show-for-large">LEGACY Test Page</h3>
+                <h4 class="show-for-medium-only">LEGACY Test Page</h4>
+                <h5 class="show-for-small-only">LEGACY Test Page</h5>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="top-bar-right">
+        <ul class="menu"></ul>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="row expanded collapse">
+    <div class="small-12 large-8 xx-large-9 columns">
+        {% include 'partials/old/player_body.html' %}
+    </div>
+    <div class="small-12 large-4 xx-large-3 columns">
+        {% include 'partials/old/logging_body.html' %}
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "partials/foot.html" %}
+{% endblock %}

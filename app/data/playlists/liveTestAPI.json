@@ -1,0 +1,244 @@
+processVideoPlaylist({ "videos":
+  [
+{  
+      "type":"",
+      "widget_type":"",
+      "videoType":"Non Broadcast Live Video",
+      "mpxId":"332046915744",
+      "guid":"hayley_live_test",
+      "pubDate":"2015-04-07 14:59:00 Z",
+      "expirationDate":"2112-09-25 14:59:00 Z",
+      "playbackIsDisabled":false,
+      "availabilityState":"available",
+      "title":"Live video test",
+      "description":"Live video test guid = hayley_live_test",
+      "thumbnail":"http://media2.s-nbcnews.com/i/MSNBC/Components/Video/150407/tdy_klg_cole_150407.jpg",
+      "source":"TODAY",
+      "sourceId":null,
+      "canonicalUrl":"http://www.today.com/video/today/57212293",
+      "shortUrl":"http://on.today.com/1CawKr1",
+      "topVideosPlaylist":"nnd_18424824",
+      "mezzVersion":"1",
+      "embedUrl":"http://player.theplatform.com/p/2E2eJC/nbcNewsOffsite?guid=hayley_live_test",
+      "videoAssets":[  
+         {  
+            "format":"M3U",
+            "assetType":"Live HLS",
+            "publicUrl":"http://link.theplatform.com/s/69ekLC/f9QotUM5gi7v",
+            "width":"0",
+            "height":"0",
+            "bitRate":"0",
+            "privateUrl":"ftp://nbcnewsvideo.upload.akamai.com/199011/ism/44/1015/tdy_klg_cole_150407.ism"
+         },
+         {  
+            "format":"F4M",
+            "assetType":"OnceURL",
+            "publicUrl":"http://link.theplatform.com/s/69ekLC/fElATTzn_qe_",
+            "width":"0",
+            "height":"0",
+            "bitRate":"0",
+            "privateUrl":"http://once.unicornmedia.com/now/od/auto/3aaae01e-e0f4-439d-aa7a-8d5e3e774105/1283b9be-b186-47bb-9740-5786b7cfaf49/1d72f400-de37-4c07-98a9-f90d98094c13/content.once"
+         }
+      ],
+      "video_playlists":[  
+         {  
+            "playlist_id":"nnd_26316687",
+            "label":null
+         },
+         {  
+            "playlist_id":"nnd_45557102",
+            "label":"TODAY Editor's Picks"
+         },
+         {  
+            "playlist_id":"nnd_18424824",
+            "label":"TODAY Source"
+         },
+         {  
+            "playlist_id":"nnd_26316687",
+            "label":"TODAY KLG & Hoda"
+         },
+         {  
+            "playlist_id":"nnd_NBCNewsTodayAll",
+            "label":"All NBC News and TODAY sources"
+         }
+      ],
+      "autoPlay":false,
+      "duration":266
+   },
+
+    {
+      "type": "widget",
+      "widget_type": "inline-video",
+      "videoType": "Broadcast",
+      "mpxId": "356866627640",
+      "guid": "tdy_tren_clinton_141112",
+      "pubDate": "2014-11-12 13:57:00 Z",
+      "expirationDate": "2112-05-02 13:57:00 Z",
+      "playbackIsDisabled": false,
+      "availabilityState": "available",
+      "title": "Bill Clinton makes odd ‘House of Cards’ joke",
+      "description": "While appearing on Ellen DeGeneres’ show, the former president chatted about watching “House of Cards.” Referring to Kevin Spacey’s presidential character getting away with murder on the show, Clinton quipped: “I wish I’d known about that.”",
+      "thumbnail": "http://media2.s-nbcnews.com/i/MSNBC/Components/Video/141112/tdy_tren_clinton_141112.jpg",
+      "source": "TODAY",
+      "sourceId": null,
+      "canonicalUrl": "http://www.today.com/video/today/56409787",
+      "shortUrl": "http://on.today.com/1zjz3I5",
+      "associatedPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/dev_49287195",
+      "fallbackPlaylistUrl": null,
+      "topVideosPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/nnd_20381145",
+      "mezzVersion": "1",
+      "embedUrl": "http://player.theplatform.com/p/69ekLC/nbcNewsOffsite&guid=tdy_tren_clinton_141112",
+      "videoAssets": [
+      {
+        "format": "MPEG4",
+        "assetType": "OnceURL",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/6zDj8BmOL9nr",
+        "width": "0",
+        "height": "0",
+        "bitRate": "0"
+      },
+      {
+        "format": "MPEG4",
+        "assetType": "Limelight MP4",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/Awa0m8PsbKTX",
+        "width": "420",
+        "height": "240",
+        "bitRate": "500000"
+      },
+      {
+        "format": "MPEG4",
+        "assetType": "Limelight MP4",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/5EB5Zx2iovmA",
+        "width": "640",
+        "height": "360",
+        "bitRate": "800000"
+      }
+      ],
+      "video_playlists": [],
+      "defaultAssociation": null,
+      "duration": 50,
+      "liveVideoEvent": null,
+      "liveVideoStatus": null,
+      "autoPlay": true
+    },
+    {
+      "type": "widget",
+      "widget_type": "inline-video",
+      "videoType": "Broadcast",
+      "mpxId": "352596547909",
+      "guid": "nn_jra_virgin_141104",
+      "pubDate": "2014-11-04 23:41:19 Z",
+      "expirationDate": "2024-12-31 23:59:00 Z",
+      "playbackIsDisabled": false,
+      "availabilityState": "available",
+      "title": "How One Pilot Managed to Survive Virgin Galactic Crash",
+      "description": "Investigators are taking a closer look at the final moments of the two pilots aboard Virgin Galactic's SpaceShipTwo.",
+      "thumbnail": "http://media1.s-nbcnews.com/i/MSNBC/Components/Video/__NEW/2014-11-04T23-42-03-633Z--1280x720.jpg",
+      "source": "Nightly News",
+      "sourceId": null,
+      "canonicalUrl": "http://www.nbcnews.com/watch/nightly-news/how-one-pilot-managed-to-survive-virgin-galactic-crash-352596547909",
+      "shortUrl": "http://nbcnews.to/1qobYi3",
+      "associatedPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/nnd_18424741",
+      "fallbackPlaylistUrl": null,
+      "topVideosPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/nnd_20381145",
+      "mezzVersion": "1",
+      "embedUrl": "http://player.theplatform.com/p/69ekLC/nbcNewsOffsite?guid=nn_jra_virgin_141104",
+      "videoAssets": [
+        {
+          "format": "MPEG4",
+          "assetType": "OnceURL",
+          "publicUrl": "http://link.theplatform.com/s/69ekLC/oMjapz8841Sl?mbr=true",
+          "width": "0",
+          "height": "0",
+          "bitRate": "0"
+        },
+        {
+          "format": "MPEG4",
+          "assetType": "Limelight MP4",
+          "publicUrl": "http://link.theplatform.com/s/69ekLC/cTMptK574eVO?mbr=true",
+          "width": "420",
+          "height": "240",
+          "bitRate": "500000"
+        },
+        {
+          "format": "MPEG4",
+          "assetType": "Limelight MP4",
+          "publicUrl": "http://link.theplatform.com/s/69ekLC/NqdsHkGBXYwB?mbr=true",
+          "width": "640",
+          "height": "360",
+          "bitRate": "800000"
+        }
+      ],
+      "video_playlists": [],
+      "defaultAssociation": null,
+      "duration": 137,
+      "liveVideoEvent": null,
+      "liveVideoStatus": null,
+      "autoPlay": false
+    },
+    {
+      "type": "widget",
+      "widget_type": "inline-video",
+      "videoType": "Broadcast",
+      "mpxId": "356866627640",
+      "guid": "tdy_tren_clinton_141113",
+      "pubDate": "2014-11-12 13:57:00 Z",
+      "expirationDate": "2112-05-02 13:57:00 Z",
+      "playbackIsDisabled": false,
+      "availabilityState": "available",
+      "title": "Bill Clinton makes odd ‘House of Cards’ joke",
+      "description": "While appearing on Ellen DeGeneres’ show, the former president chatted about watching “House of Cards.” Referring to Kevin Spacey’s presidential character getting away with murder on the show, Clinton quipped: “I wish I’d known about that.”",
+      "thumbnail": "http://media2.s-nbcnews.com/i/MSNBC/Components/Video/141112/tdy_tren_clinton_141112.jpg",
+      "source": "TODAY",
+      "sourceId": null,
+      "canonicalUrl": "http://www.today.com/video/today/56409787",
+      "shortUrl": "http://on.today.com/1zjz3I5",
+      "associatedPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/dev_49287195",
+      "fallbackPlaylistUrl": null,
+      "topVideosPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/nnd_20381145",
+      "mezzVersion": "2",
+      "embedUrl": "http://player.theplatform.com/p/69ekLC/nbcNewsOffsite&guid=tdy_tren_clinton_141112",
+      "videoAssets": [
+      {
+        "format": "ISM",
+        "assetType": "Smooth_1",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/gWvN1Inhs_Mo",
+        "width": "1464",
+        "height": "824",
+        "bitRate": "3764000"
+      },
+      {
+        "format": "MPEG4",
+        "assetType": "OnceURL",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/6zDj8BmOL9nr",
+        "width": "0",
+        "height": "0",
+        "bitRate": "0"
+      },
+      {
+        "format": "MPEG4",
+        "assetType": "Limelight MP4",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/Awa0m8PsbKTX",
+        "width": "420",
+        "height": "240",
+        "bitRate": "500000"
+      },
+      {
+        "format": "MPEG4",
+        "assetType": "Limelight MP4",
+        "publicUrl": "http://link.theplatform.com/s/69ekLC/5EB5Zx2iovmA",
+        "width": "640",
+        "height": "360",
+        "bitRate": "800000"
+      }
+      ],
+        "video_playlists": [],
+        "defaultAssociation": null,
+        "duration": 50,
+        "liveVideoEvent": null,
+        "liveVideoStatus": null,
+        "autoPlay": true
+      }
+    ]
+  }
+)

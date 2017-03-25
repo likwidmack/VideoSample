@@ -1,0 +1,44 @@
+<div id="infoPanel" class="callout">
+    <div id="apiBtns">
+        <h3>API <small id="playerVersion" style="color:blue"></small></h3>
+        <button id="play" class="button">Play</button>
+        <button id="pause" class="button">Pause</button>
+        <button id="next" class="button">Next</button>
+        <button id="clearLog" class="button secondary">Clear log</button>
+        <br><hr style="clear: both">
+        <ul class="inline">
+            <li id="blockFullscreen">
+                <button id="apiFullscreen" class="button">Go To Fullscreen</button>
+                <button id="apiFullscreenExit" class="button">Exit Full screen in 10 seconds</button>
+                <span id="readFullscreen">false</span>
+            </li>
+			
+			<li id="blockTimeConfig">
+			<label for="apiTimeConfig">Set Time in Milliseconds</label>
+				<input id="apiTimeConfig" type="text" value="7000" />
+			</li>
+			
+            <li id="blockCC">
+                <label for="apiCC">Toggle Close Cap</label>
+                <input type="checkbox" id="apiCC" />
+                <span id="readCC">false</span>
+            </li>
+            <li id="blockVolume">
+                <label for="apiVolume">Adjust Volume (0-100)</label>
+                <input type="text" id="apiVolume" />
+                <span id="readVolume">0</span>
+            </li>
+            <li id="blockScrub">
+                <label for="apiScrub">Adjust Position (0-100)</label>
+                <input type="text" id="apiScrub" />
+                <span id="readScrub">0</span>
+            </li>
+        </ul>
+    </div>
+    <h4>Player events: <span id="playerEvents"></span></h4>
+    <div id="outputLog">
+        <h4>Events Log</h4>
+        <ol></ol>
+    </div>
+</div>
+<hr style="clear: both">

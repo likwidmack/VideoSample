@@ -1,0 +1,24 @@
+<h5>Page
+    <small title="Last Updated" data-bind="text:lastUpdated"></small>
+</h5>
+<button class="small button" data-bind="click:refresh">Refresh</button>
+<div class="input-group">
+    <span class="input-group-label">URL</span>
+    <input id="info-page-urlLocation" class="input-group-field" type="url"
+           data-bind="value:urlLocation,attr:{title:urlLocation}" readonly>
+    <div class="input-group-button">
+        <button type="button" class="button" placeholder="Click here to Copy (Ctrl-C) contents"
+                data-bind="click:copyContent">Copy
+        </button>
+    </div>
+</div>
+<div data-bind="with:htmlPrint">
+    <section>
+        <h6>NDP</h6>
+        <pre class="horizontal-constraint" data-bind="html:ndp"></pre>
+    </section>
+    <section>
+        <h6>Detection</h6>
+        <pre class="horizontal-constraint" data-bind="html:detect"></pre>
+    </section>
+</div>

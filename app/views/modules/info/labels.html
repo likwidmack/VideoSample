@@ -1,0 +1,18 @@
+<ul class="no-bullet" data-bind="foreach:labels">
+    <li data-bind="visible:value">
+        <!-- ko if:(datatype === 'Boolean') -->
+        <label data-bind="text:title,attr:{title:title,id:id},css:css.join(' ')"></label>
+        <!-- /ko -->
+        <!-- ko ifnot:((datatype === 'Boolean') || (datatype === 'Array')) -->
+        <label data-bind="text:value,attr:{title:title,id:id},css:css.join(' ')"></label>
+        <!-- /ko -->
+        <!-- ko if:(datatype === 'Array') -->
+        <label data-bind="attr:{title:title,id:id},css:css.join(' ')">
+            <!-- ko foreach: value -->
+            <span class="secondary label" data-bind="text:$data"></span>
+            <!-- /ko -->
+        </label>
+        <!-- /ko -->
+    </li>
+</ul>
+

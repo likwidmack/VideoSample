@@ -1,0 +1,21 @@
+{
+  "ndp": {
+    "debug": 1,
+    "debugMode": 3
+  },
+  "page": {
+    "merged": 0,
+    "branch": "dev"
+  },
+  "misc": {
+    "storage": 1
+  },
+  "modules": {
+    "player": 1,
+    "assets": 1,
+    "panel": 1,
+    "info": 1,
+    "links": 1,
+    "log": 1
+  }
+}

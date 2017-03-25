@@ -1,0 +1,11 @@
+<div class="row" data-bind="visible:log">
+    <div class="small-12 columns callout primary small" data-bind="with:log">
+        <h4>LOG PANEL</h4>
+        <section class="callout">
+
+            <div data-bind="with:logging">
+                {% include "logging.html" %}
+            </div>
+        </section>
+    </div>
+</div>

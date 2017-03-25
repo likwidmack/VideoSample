@@ -1,0 +1,153 @@
+{
+            "native_ad_results": [
+
+       ],
+            "stats": {
+                "totalResults": 336,
+                "requestedAt": "2014-10-15 21:14:25 Z",
+                "executionTime": 15,
+                "ra": "s2",
+                "rd": "s1"
+            },
+            "config": {
+                "layout": "normal",
+                "marquee": null,
+                "native_ad": null
+            },
+            "metadata": {
+                "taxonomy": {
+                    "name": "Health Care",
+                    "title": "Health Care News - Breaking News & Top Stories",
+                    "slug": "health-care",
+                    "facebook": null,
+                    "twitter": null,
+                    "description": "Go to NBCNews.com for the latest health care news, photos and video.",
+                    "avatar": null,
+                    "parent_name": "Health",
+                    "parent_slug": "health",
+                    "pinned_count": null,
+                    "enable_newsletter": false
+                }
+            },
+            "results": [
+          {
+              "body": null,
+              "summary": "Baltimore Ravens owner Steve Bisciotti is refuting reports that the Ravens knew much more, much earlier about the Ray Rice incident.",
+              "mediaList": null,
+              "breaking_news": false,
+              "show_on_cover": false,
+              "ads_enabled": true,
+              "comments_enabled": true,
+              "search_enabled": true,
+              "native_ad": false,
+              "copyright": null,
+              "cover_art": null,
+              "tease_art": null,
+              "canonical_url": "http://www.nbcnews.com/health/health-care/new-ray-rice-report-suggests-coverup-baltimore-ravens-n65",
+              "short_url": "http://nbcnews.to/1raQcCZ",
+              "title_url_slug": "new-ray-rice-report-suggests-coverup-baltimore-ravens",
+              "original_canonical_url": "http://www.nbcnews.com/health/health-care/new-ray-rice-report-suggests-coverup-baltimore-ravens-n65",
+              "source": null,
+              "headline_breaking_news": null,
+              "video": {
+                  "type": "",
+                  "widget_type": "",
+                  "videoType": "Broadcast",
+                  "mpxId": "332208195955",
+                  "guid": "nn_pal_nfl_140922",
+                  "pubDate": "1970-01-01 00:00:00 Z",
+                  "expirationDate": "2112-03-12 23:20:00 Z",
+                  "playbackIsDisabled": false,
+                  "availabilityState": "available",
+                  "title": "New Ray Rice Report Suggests Coverup by Baltimore Ravens",
+                  "description": "Baltimore Ravens owner Steve Bisciotti is refuting reports that the Ravens knew much more, much earlier about the Ray Rice incident.",
+                  "thumbnail": "http://media2.s-nbcnews.com/i/MSNBC/Components/Video/__NEW/nn_pal_nfl_140922.jpg",
+                  "source": "Nightly News",
+                  "sourceId": null,
+                  "canonicalUrl": "http://www.nbcnews.com/watch/nightly-news/new-ray-rice-report-suggests-coverup-by-baltimore-ravens-332208195955",
+                  "shortUrl": "http://nbcnews.to/1mpR7Op",
+                  "associatedPlaylistUrl": "http://feed.theplatform.com/f/69ekLC/dev_21426262",
+                  "fallbackPlaylistUrl": null,
+                  "topVideosPlaylistUrl": "http://feed.theplatform.com/f/2E2eJC/nnd_20381145",
+                  "mezzVersion": "2",
+                  "embedUrl": "http://player.theplatform.com/p/2E2eJC/nbcNewsOffsite&guid=nn_pal_nfl_140922",
+                  "videoAssets": [
+                   {
+                       "format": "MPEG4",
+                       "assetType": "Limelight MP4",
+                       "publicUrl": "http://link.theplatform.com/s/69ekLC/7JfV6RC82dvu",
+                       "width": "420",
+                       "height": "240",
+                       "bitRate": "500000"
+                   },
+                   {
+                       "format": "MPEG4",
+                       "assetType": "Limelight MP4",
+                       "publicUrl": "http://link.theplatform.com/s/69ekLC/YXIPQGXP980P",
+                       "width": "640",
+                       "height": "360",
+                       "bitRate": "800000"
+                   },
+                   {
+                       "format": "MPEG4",
+                       "assetType": "OnceURL",
+                       "publicUrl": "http://link.theplatform.com/s/69ekLC/nv0VhW7JuGgU",
+                       "width": "0",
+                       "height": "0",
+                       "bitRate": "0"
+                   }
+                ],
+                  "duration": 97,
+                  "hasCaption": false
+              },
+              "type": "video",
+              "headline": "New Ray Rice Report Suggests Coverup by Baltimore Ravens",
+              "headline_cover": null,
+              "headline_slug": "new-ray-rice-report-suggests-coverup-baltimore-ravens",
+              "bylines": [
+
+             ],
+              "first_published_utc": "2014-09-24 21:14:41 Z",
+              "last_published_utc": "2014-09-24 21:14:40 Z",
+              "sections": [
+                {
+                    "title": "Health",
+                    "slug": "health"
+                }
+             ],
+              "topics": [
+                {
+                    "title": "Health Care",
+                    "slug": "health-care"
+                }
+             ],
+              "feature": [
+
+             ],
+              "show": [
+
+             ],
+              "storyline": [
+
+             ],
+              "tags": [
+
+             ],
+              "labels": [
+
+             ],
+              "id": "NewsCms/Entry/65",
+              "externalId": "65",
+              "externalSource": "NewsCms",
+              "main_art": {
+                  "caption": null,
+                  "url": "http://media2.s-nbcnews.com/i/MSNBC/Components/Video/__NEW/nn_pal_nfl_140922.jpg",
+                  "credit": null,
+                  "source": null,
+                  "alt_text": null,
+                  "width": 0,
+                  "height": 0
+              }
+          }
+       ]
+        }

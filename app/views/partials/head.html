@@ -1,0 +1,76 @@
+{% if preset == 'clean' %}
+<h3>VIDEO NDP Test Page</h3>
+{% else %}
+
+<div class="title-bar" data-responsive-toggle="top-ndp-menu" data-hide-for="medium">
+    <button class="menu-icon dark" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+
+<nav class="top-bar" id="top-ndp-menu">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">
+                <h3 class="show-for-large">NDP VIDEO Test Page</h3>
+                <h5 class="show-for-medium-only">NDP VIDEO Test Page</h5>
+                <strong class="show-for-small-only">NDP VIDEO Test Page</strong>
+            </li>
+            <!-- ko with:links -->
+            <!-- ko foreach:drilldownLinks -->
+            <!-- ko if: $data.title -->
+            <li class="is-dropdown-submenu-parent">
+                <a href="#" data-bind="text:title"></a>
+                <ul class="menu vertical" data-bind="foreach:links">
+                    <li><a href="#" data-bind="text:name,attr:{href:href,target:target}"></a></li>
+                </ul>
+            </li>
+            <!-- /ko -->
+            <!-- ko ifnot: $data.title -->
+            <li><a href="#" data-bind="text:name,attr:{href:href,target:target}"></a></li>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- /ko -->
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        {% include "headerLabels.html" %}
+    </div>
+</nav>
+<div id="module_page_buttons" data-bind="with:layout">
+    <ul class="horizontal menu expanded">
+        <li data-bind="css:cssLink.body">
+            <a id="link-body" data-bind="click:containerLink">Player</a></li>
+        <li data-bind="css:cssLink.log">
+            <a id="link-log" data-bind="click:containerLink">Logs</a></li>
+        <li data-bind="css:cssLink.info">
+            <a id="link-info" data-bind="click:containerLink">Information</a></li>
+        <li data-bind="css:cssLink.panel">
+            <a id="link-panel" data-bind="click:containerLink">Control Panel</a></li>
+    </ul>
+    <div class="hide">
+        <input type="radio"
+               id="rad_body"
+               name="module_containers"
+               value="body"
+               data-bind="checked:activeContainer">
+
+        <input type="radio"
+               id="rad_log_container"
+               name="module_containers"
+               value="log"
+               data-bind="checked:activeContainer">
+
+        <input type="radio"
+               id="rad_info_container"
+               name="module_containers"
+               value="info"
+               data-bind="checked:activeContainer">
+
+        <input type="radio"
+               id="rad_panel_container"
+               name="module_containers"
+               value="panel"
+               data-bind="checked:activeContainer">
+    </div>
+</div>
+{% endif %}

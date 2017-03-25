@@ -1,0 +1,37 @@
+{
+  "ndp": {
+    "ads": null,
+    "controlRack": null,
+    "debug": null,
+    "debugMode": null,
+    "version": null
+  },
+  "player": {
+    "autoplay": null,
+    "pdkVersion": null,
+    "playerType": null
+  },
+  "page": {
+    "async": null,
+    "brand": null,
+    "merged": null,
+    "branch": null
+  },
+  "playlist": {
+    "assets": null,
+    "continuous": null,
+    "live": null
+  },
+  "misc": {
+    "storage": null,
+    "fwads": null
+  },
+  "modules": {
+    "player": null,
+    "assets": null,
+    "panel": null,
+    "info": null,
+    "links": null,
+    "log": null
+  }
+}

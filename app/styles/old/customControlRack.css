@@ -1,0 +1,22 @@
+#customControls { width: 800px; height: 40px; background-color: #999; position: relative; z-index: 5000; }
+#customControls > div { position: absolute; overflow: hidden; top: 0; bottom: 0; color: white; line-height: 40px; text-align: center; }
+#customControls > div:hover { background-color: #ccc; color: black; cursor: pointer; }
+#customPlay { left: 0; width: 40px; }
+#customPause { left: 40px; width: 40px; }
+#customTimePosition { left: 80px; width: 40px; }
+#customSeek { left: 120px; right: 140px; }
+#customSeekBar { background-color: black; height: 2px; margin: 18px 0; display: block; }
+#customPip { position: absolute; top: 5px; bottom: 5px; width: 10px; background-color: #333; }
+#customTimeRemaining { right: 100px; width: 40px; }
+#customVolume { right: 60px; width: 40px; }
+#customVolume:hover { top: -100px; padding-top: 100px; overflow: visible; }
+#customVolumeBar { position: absolute; bottom: 40px; height: 100px; right: 0; left: 0; }
+#customVolumeBar > div { position: absolute; top: 0; bottom: 0; right: 18px; left: 18px; background-color: black; }
+#customPim { position: absolute; bottom: 140px; height: 2px; right: 5px; left: 5px; background-color: #333; cursor: default; }
+#customCC { right: 30px; width: 30px; }
+#customFullscreen { right: 0; width: 30px; }
+.adState #customSeek,
+.adState #customSeekBar,
+.adState #customPip,
+.adState #customTimePosition,
+.adState #customCC { display: none; }

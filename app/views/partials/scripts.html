@@ -1,0 +1,50 @@
+<script>
+    //XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.open;
+    var onLoadEnd = function () {
+        console.log("XMLHttpRequest onLoadEnd data: ", arguments);
+        //console.log("XMLHttpRequest onLoadEnd data: ", arguments, '\n', this.getAllResponseHeaders(), this);
+    };
+    // here "this" points to the XMLHttpRequest Object.
+    var newOpen = function (vData) {
+        console.log("XMLHttpRequest OPEN data: " + vData/*, this*/);
+        this.onloadend = onLoadEnd;
+        this.realSend.apply(this, arguments);
+    };
+    //XMLHttpRequest.prototype.open = newOpen;
+
+    var scripts = document.getElementsByTagName('script');
+    //console.info('SCRIPTS', scripts);
+    var i = scripts.length;
+    while (i--) {
+        var _script = scripts[i];
+        _script.onload = function () {
+            //console.warn('ONLOAD DONE', arguments);
+        }
+    }
+
+    Object.defineProperties(window, {
+        $GLOBAL_FUNCTIONS: {
+            value: {},
+            enumerable: true
+        }
+        , $GLOBAL_PARAM: {
+            value: {},
+            enumerable: true
+        }
+        , $URL_LOCATION:{
+            value: window.location.href,
+            writable: true
+        }
+    });
+    window.$GLOBAL_PARAM.$DATASTRING = '{{datastring}}';
+    window.$GLOBAL_PARAM.$PAGE_TIMESTAMP = (new Date()).getTime();
+</script>
+{% if preset != 'clean' %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+{% endif %}
+<!--[if lte IE 11]>
+<script type="text/javascript" src="/libs/es5-shim/es5-shim.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/libs/knockout/dist/knockout.js"></script>
+<script type="text/javascript" src="/libs/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/js/misc/showads.js"></script>

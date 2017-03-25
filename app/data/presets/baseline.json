@@ -1,0 +1,24 @@
+{
+  "ndp": {
+    "debug": 1,
+    "debugMode": 2
+  },
+  "page": {
+    "async": 1,
+    "merged": 0
+  },
+  "playlist": {
+    "continuous": 1
+  },
+  "misc": {
+    "storage": 0
+  },
+  "modules": {
+    "player": 1,
+    "assets": 1,
+    "panel": 1,
+    "info": 1,
+    "links": 1,
+    "log": 0
+  }
+}
