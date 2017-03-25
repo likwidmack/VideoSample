@@ -1,0 +1,228 @@
+<tt xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt" xmlns:m608="http://www.smpte-ra.org/schemas/xxxx/2009/smpte-tt#cea608" xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <ttm:desc>Caption file from NBC News</ttm:desc>
+    <ttm:copyright>Copyright (C) NBC News.</ttm:copyright>
+    <styling>
+      <style xml:id="s1" tts:backgroundColor="rgba(0,0,0,255)" tts:color="rgba(255,255,255,255)" tts:fontFamily="proportionalSansSerif" />
+    </styling>
+    <layout>
+      <region xml:id="r1" tts:showBackground="whenActive" tts:origin="20% 80%" tts:extent="70% 5.33%" tts:textAlign="center" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p begin="00:00:07:26" end="00:00:09:06" region="r1" style="s1">
+        <span>&gt;&gt;&gt; FIRST THERE WAS THE ROYAL 
+ </span>
+      </p>
+      <p begin="00:00:09:06" end="00:00:10:10" region="r1" style="s1">
+        <span>BABY CHARLOTTE.
+ </span>
+      </p>
+      <p begin="00:00:10:10" end="00:00:12:17" region="r1" style="s1">
+        <span>NOW WE'VE GOT ANOTHER NEWBORN. 
+ </span>
+      </p>
+      <p begin="00:00:12:17" end="00:00:14:26" region="r1" style="s1">
+        <span>&gt;&gt; THE G. AQUARIUM IN ATLANTA 
+ </span>
+      </p>
+      <p begin="00:00:14:26" end="00:00:16:05" region="r1" style="s1">
+        <span>SHARED SOME HAPPY NEWS WITH THE 
+ </span>
+      </p>
+      <p begin="00:00:16:05" end="00:00:19:21" region="r1" style="s1">
+        <span>BIRTH OF A BOUNCING BABY BELUGA 
+ </span>
+      </p>
+      <p begin="00:00:19:21" end="00:00:20:01" region="r1" style="s1">
+        <span>WHALE. 
+ </span>
+      </p>
+      <p begin="00:00:20:01" end="00:00:23:11" region="r1" style="s1">
+        <span>&gt;&gt; WE HAVE BEEN GIVEN AN 
+ </span>
+      </p>
+      <p begin="00:00:23:11" end="00:00:24:29" region="r1" style="s1">
+        <span>EXCLUSIVE BIRTH.
+ </span>
+      </p>
+      <p begin="00:00:24:29" end="00:00:26:06" region="r1" style="s1">
+        <span>&gt;&gt; AT THE GEORGIA AQUARIUM, 
+ </span>
+      </p>
+      <p begin="00:00:26:06" end="00:00:27:12" region="r1" style="s1">
+        <span>THEY'RE ALMOST AT A LOSS FOR 
+ </span>
+      </p>
+      <p begin="00:00:27:12" end="00:00:28:29" region="r1" style="s1">
+        <span>WORDS WHEN IT COMES TO 
+ </span>
+      </p>
+      <p begin="00:00:28:29" end="00:00:32:09" region="r1" style="s1">
+        <span>DESCRIBING HOW CUTE THEIR NEW 
+ </span>
+      </p>
+      <p begin="00:00:32:09" end="00:00:33:05" region="r1" style="s1">
+        <span>BABY IS.
+ </span>
+      </p>
+      <p begin="00:00:33:05" end="00:00:33:23" region="r1" style="s1">
+        <span>&gt;&gt; 4,000.
+ </span>
+      </p>
+      <p begin="00:00:33:23" end="00:00:36:17" region="r1" style="s1">
+        <span>IT'S JUST, THERE IS NO SCALE FOR
+ </span>
+      </p>
+      <p begin="00:00:36:17" end="00:00:36:25" region="r1" style="s1">
+        <span>IT. 
+ </span>
+      </p>
+      <p begin="00:00:36:25" end="00:00:38:21" region="r1" style="s1">
+        <span>&gt;&gt; Reporter: BUT WHAT DO YOU 
+ </span>
+      </p>
+      <p begin="00:00:38:21" end="00:00:39:01" region="r1" style="s1">
+        <span>EXPECT?
+ </span>
+      </p>
+      <p begin="00:00:39:01" end="00:00:40:29" region="r1" style="s1">
+        <span>IT WAS QUITE AN OCCASION WHEN 
+ </span>
+      </p>
+      <p begin="00:00:40:29" end="00:00:44:16" region="r1" style="s1">
+        <span>MOM MARIS GAVE BIRTH TO THIS 
+ </span>
+      </p>
+      <p begin="00:00:44:16" end="00:00:47:00" region="r1" style="s1">
+        <span>LITTLE GIRL ON MOTHER'S DAY NO 
+ </span>
+      </p>
+      <p begin="00:00:47:00" end="00:00:47:09" region="r1" style="s1">
+        <span>LESS.
+ </span>
+      </p>
+      <p begin="00:00:47:09" end="00:00:50:23" region="r1" style="s1">
+        <span>THE BABY BELUGA WAS JUST UNDER 
+ </span>
+      </p>
+      <p begin="00:00:50:23" end="00:00:53:13" region="r1" style="s1">
+        <span>5-FEET WHEN SHE WAS BORN 
+ </span>
+      </p>
+      <p begin="00:00:53:13" end="00:00:55:23" region="r1" style="s1">
+        <span>WEIGHING IN AT 126.5 POUNDS. 
+ </span>
+      </p>
+      <p begin="00:00:55:23" end="00:00:57:19" region="r1" style="s1">
+        <span>&gt;&gt; LOOK AT MARIS.
+ </span>
+      </p>
+      <p begin="00:00:57:19" end="00:00:59:17" region="r1" style="s1">
+        <span>WE ARE SO PROUD OF HER.
+ </span>
+      </p>
+      <p begin="00:00:59:17" end="00:01:02:13" region="r1" style="s1">
+        <span>SHE IMMEDIATELY TENDED TO THE 
+ </span>
+      </p>
+      <p begin="00:01:02:13" end="00:01:04:26" region="r1" style="s1">
+        <span>CALF, HELPED IT UP TO THE 
+ </span>
+      </p>
+      <p begin="00:01:04:26" end="00:01:05:07" region="r1" style="s1">
+        <span>SURFACE. 
+ </span>
+      </p>
+      <p begin="00:01:05:07" end="00:01:06:03" region="r1" style="s1">
+        <span>&gt;&gt; Reporter: NUMBER ONE FOR 
+ </span>
+      </p>
+      <p begin="00:01:06:03" end="00:01:08:05" region="r1" style="s1">
+        <span>MARIS IS TO MAKE SURE SHE GETS 
+ </span>
+      </p>
+      <p begin="00:01:08:05" end="00:01:11:09" region="r1" style="s1">
+        <span>TO THE SURFACE TO TAKE HER FIRST
+ </span>
+      </p>
+      <p begin="00:01:11:09" end="00:01:12:05" region="r1" style="s1">
+        <span>BREATH OF AIR. 
+ </span>
+      </p>
+      <p begin="00:01:12:05" end="00:01:13:18" region="r1" style="s1">
+        <span>&gt;&gt; YOU FINE YOURSELF HOLDING 
+ </span>
+      </p>
+      <p begin="00:01:13:18" end="00:01:14:29" region="r1" style="s1">
+        <span>YOUR BREATH WAITING FOR IT TO 
+ </span>
+      </p>
+      <p begin="00:01:14:29" end="00:01:15:09" region="r1" style="s1">
+        <span>HAPPEN. 
+ </span>
+      </p>
+      <p begin="00:01:15:09" end="00:01:16:07" region="r1" style="s1">
+        <span>&gt;&gt; Reporter: THEY ARE HOLDING 
+ </span>
+      </p>
+      <p begin="00:01:16:07" end="00:01:17:17" region="r1" style="s1">
+        <span>THEIR BREATH THE NEXT MONTH WILL
+ </span>
+      </p>
+      <p begin="00:01:17:17" end="00:01:20:15" region="r1" style="s1">
+        <span>BE CRITICAL FOR THE BABY'S 
+ </span>
+      </p>
+      <p begin="00:01:20:15" end="00:01:20:27" region="r1" style="s1">
+        <span>WELL-BEING.
+ </span>
+      </p>
+      <p begin="00:01:20:27" end="00:01:22:22" region="r1" style="s1">
+        <span>SO VISITORS AREN'T ALLOWED TO 
+ </span>
+      </p>
+      <p begin="00:01:22:22" end="00:01:23:17" region="r1" style="s1">
+        <span>SEE HER JUST YET.
+ </span>
+      </p>
+      <p begin="00:01:23:17" end="00:01:25:13" region="r1" style="s1">
+        <span>FOR NOW, IT'S ALL SMILES. 
+ </span>
+      </p>
+      <p begin="00:01:25:13" end="00:01:27:19" region="r1" style="s1">
+        <span>&gt;&gt; THEY ALWAYS LOOK LIKE THEY'RE
+ </span>
+      </p>
+      <p begin="00:01:27:19" end="00:01:27:27" region="r1" style="s1">
+        <span>HAPPY.
+ </span>
+      </p>
+      <p begin="00:01:27:27" end="00:01:29:04" region="r1" style="s1">
+        <span>THEY LOOK LIKE THEY'RE SMILING, 
+ </span>
+      </p>
+      <p begin="00:01:29:04" end="00:01:31:21" region="r1" style="s1">
+        <span>IT MAKES EVERYBODY ELSE SMILE 
+ </span>
+      </p>
+      <p begin="00:01:31:21" end="00:01:32:15" region="r1" style="s1">
+        <span>AND HAPPY.
+ </span>
+      </p>
+      <p begin="00:01:32:15" end="00:01:35:04" region="r1" style="s1">
+        <span>&gt;&gt; EASILY ONE OF MY FAVORITE 
+ </span>
+      </p>
+      <p begin="00:01:35:04" end="00:01:36:15" region="r1" style="s1">
+        <span>ANIMALS, THE BIG QUESTION IS, 
+ </span>
+      </p>
+      <p begin="00:01:36:15" end="00:01:37:15" region="r1" style="s1">
+        <span>WHAT'S HER NAME?
+ </span>
+      </p>
+    </div>
+  </body>
+</tt>

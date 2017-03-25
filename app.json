@@ -1,0 +1,24 @@
+{
+  "name": "ndp-video-spa",
+  "description": "NBC News Technology, NDP Video Development Test Pages",
+  "keywords": [
+    "NDP",
+    "NBCNews",
+    "SPA",
+    "Tester"
+  ],
+  "website": "ndp-spa.herokuapp.com/",
+  "repository": "https://github.com/nbcnews/ndp-video-spa",
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons":[],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<h5>Configuration <small title="Last Updated" data-bind="text:lastUpdated"></small></h5>
+<button class="small button" data-bind="click:refresh">Refresh</button>
+<div data-bind="with:htmlPrint">
+    <section>
+        <h6>User</h6>
+        <pre class="horizontal-constraint" data-bind="html:user"></pre>
+    </section>
+    <section>
+        <h6>Environment</h6>
+        <pre class="horizontal-constraint" data-bind="html:environment"></pre>
+    </section>
+    <section>
+        <h6>Navigator</h6>
+        <pre class="horizontal-constraint" data-bind="html:navigator"></pre>
+    </section>
+    <section>
+        <h6>GeoLocation</h6>
+        <pre class="horizontal-constraint" data-bind="html:geolocation"></pre>
+    </section>
+</div>

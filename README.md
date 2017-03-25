@@ -1,2 +1,3 @@
-# VideoSample
-Video Sample Page
+# Video-Spa
+Video Player Development Single Page App
+ 

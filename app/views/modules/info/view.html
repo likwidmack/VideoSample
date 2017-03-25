@@ -1,0 +1,16 @@
+<div class="row" data-bind="with:info">
+    <div class="small-12 columns callout primary">
+        <h4>INFO PANEL</h4>
+        <section class="callout">
+            <div id="info-labels-module" data-bind="with:labels">
+                {% include "labels.html" %}
+            </div><hr>
+            <div id="info-page-module" data-bind="with:page">
+                {% include "page.html" %}
+            </div><hr>
+            <div id="info-configuration-module" data-bind="with:configuration">
+                {% include "configuration.html" %}
+            </div>
+        </section>
+    </div>
+</div>

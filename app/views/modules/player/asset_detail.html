@@ -1,0 +1,52 @@
+<!-- ko if:asset_details -->
+<div id="player_asset_summary" data-bind="with:asset_details">
+    <h4 id="MainTitle" data-bind="text:title">Player Instance</h4>
+    <a data-bind="attr:{href:canonical},text:canonical" target="_blank"></a>
+    <p id="MainDescription" data-bind="text:description"></p>
+    <hr>
+    <div class="row">
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout">
+                <label class="label">ID:</label>
+                <span data-bind="text:id"></span>
+            </div>
+        </div>
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout">
+                <label class="label">mpxId:</label>
+                <span data-bind="text:mpxid"></span>
+            </div>
+        </div>
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout">
+                <label class="label">format:</label>
+                <span data-bind="text:format"></span>
+            </div>
+        </div>
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout">
+                <label class="label">Has Captions:</label>
+                <span data-bind="text:hascaption"></span>
+            </div>
+        </div>
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout">
+                <label class="label">Type:</label>
+                <span data-bind="text:type"></span>
+            </div>
+        </div>
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout">
+                <label class="label">Is Live:</label>
+                <span data-bind="text:islive"></span>
+            </div>
+        </div>
+        <div class="small-12 medium-flex-child-shrink columns">
+            <div class="callout box-constraint">
+                <label class="label">URL:</label>
+                <a data-bind="attr:{href:url,title:url},text:shortenUrl" target="_blank">Open Mpx Url</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /ko -->

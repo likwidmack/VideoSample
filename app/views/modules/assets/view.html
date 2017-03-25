@@ -1,0 +1,28 @@
+<div class="row" data-bind="with:assets">
+    <div class="columns">
+        <h3>Playlists</h3>
+        <div class="row" data-bind="foreach:playlists">
+            <div class="small-12 columns callout secondary" data-bind="css:activeStatus">
+                <h4 class="clearfix" data-bind="attr:{title:url}">
+                    <a data-bind="attr:{href:url},text:name" target="_blank"></a>
+                    <small>
+                        <span class="label" data-bind="visible:activeStatus">Active</span>
+                        <button title="Show/Hide Assets" class="button small notify float-right"
+                                data-bind="text:showAssets()?'hide':'show',click:toggleView"></button>
+                    </small>
+                </h4>
+                <ul class="panel radius asset-thumbnails" data-bind="foreach:assets,slideVisible:showAssets">
+                    <li class="thumbnail" data-bind="css:data.type">
+                        <img src="#" alt="no source"
+                             data-bind="attr:{
+                             src:data.thumbnail,
+                             title:data.title,
+                             alt:data.title
+                             },click:$root.getAsset, event:{error:$root.imgError}"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

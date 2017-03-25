@@ -1,0 +1,45 @@
+<h5>Control Rack API</h5>
+<div class="row" data-bind="with:controlrack">
+    <div class="small-12 medium-5 large-2 columns">
+        <label>Play/Pause</label>
+        <button id="btnPlayPauseToggleControl" class="button expanded" data-bind="text:displayTogglePlay,click:click.playpause">
+            Play</button>
+    </div>
+    <div class="small-12 medium-7 large-4 columns">
+        <label>Position/Scrub %</label>
+        <div class="input-group">
+            <span class="input-group-label">
+                <span data-bind="text:displayTimeCount">--</span>/<span data-bind="text:displayDuration">--</span>
+            </span>
+            <input id="customSeek" placeholder="from 0 to 100" class="input-group-field"
+                   type="number" step="1" min="0" max="100" data-bind="value:scrub">
+            <span class="input-group-label">
+                <span data-bind="text:displayPositionPercent">0%</span>
+            </span>
+        </div>
+    </div>
+    <div class="small-6 medium-5 large-2 columns">
+        <label>Volume</label>
+        <div class="input-group">
+            <input id="customVolume" placeholder="from 0 to 100" class="input-group-field"
+                   type="number" step="1" min="0" max="100" data-bind="value:setVolume">
+            <span class="input-group-label" data-bind="text:displayCurrentVolume">0</span>
+        </div>
+    </div>
+    <div class="small-6 medium-7 large-4 columns">
+        <br/>
+        <div class="row">
+            <div class="small-12 medium-6 large-12 xlarge-6 columns">
+                <label for="customCC">
+                    <input id="customCC" type="checkbox" data-bind="checked:captions">
+                    <span>Close Captions</span>
+                </label>
+            </div>
+            <div class="small-12 medium-6 large-12 xlarge-6 columns">
+                <button id="customFullscreen" class="button small expanded" data-bind="click:click.fullscreen">
+                    Go To Fullscreen</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />

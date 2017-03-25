@@ -1,0 +1,156 @@
+<div class="row">
+    <div class="small-12 columns callout primary" data-bind="with:panel">
+        <h4>CONTROL PANEL</h4>
+        <section class="callout">
+            <fieldset class="fieldset callout small">
+                <legend class="toggle-button" data-bind="click:toggleFieldset">Page</legend>
+                <div class="toggle-section">
+                    <div data-bind="template:{name:(items.preset.type)+'-template',data:items.preset}"></div>
+                    <div class="select-inline-block">
+                        <div data-bind="template:{name:(items.debug.type)+'-template',data:items.debug}"></div>
+                        <br>
+                        <div data-bind="template:{name:(items.mode.type)+'-template',data:items.mode}"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset callout small">
+                <legend class="toggle-button" data-bind="click:toggleFieldset">Player</legend>
+                <div class="toggle-section">
+                    <div class="row">
+                        <div class="small-12 large-4 columns">
+                            <br>
+                            <div class="select-inline-block">
+                                <div data-bind="template:{name:(items.controlrack.type)+'-template',data:items.controlrack}"></div>
+                                <div data-bind="template:{name:(items.ads.type)+'-template',data:items.ads}"></div>
+                                <div data-bind="template:{name:(items.autoplay.type)+'-template',data:items.autoplay}"></div>
+                            </div>
+                        </div>
+                        <div class="small-12 large-8 columns">
+                            <div data-bind="template:{name:(items.brand.type)+'-template',data:items.brand}"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 large-5 columns">
+                            <div data-bind="template:{name:(items.branch.type)+'-template',data:items.branch}"></div>
+                            <!-- ko template:{name:(items.version.type)+'-template',data:items.version} --> <!-- /ko -->
+                        </div>
+                        <div class="small-12 large-7 columns">
+                            <div data-bind="template:{name:(items.player.type)+'-template',data:items.player}"></div>
+                            <!-- ko template:{name:(items.pdk.type)+'-template',data:items.pdk} -->
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset callout small">
+                <legend class="toggle-button" data-bind="click:toggleFieldset">Playlist</legend>
+                <div class="toggle-section">
+                    <div class="row">
+                        <div class="small-12 large-6 columns select-inline-block">
+                            <div data-bind="template:{name:(items.live.type)+'-template',data:items.live}"></div>
+                            <div data-bind="template:{name:(items.continuous.type)+'-template',data:items.continuous}"></div>
+                            <hr class="hide-for-large">
+                        </div>
+                        <div class="small-12 large-6 columns">
+                            <!-- ko template:{name:(items.assets.type)+'-template',data:items.assets} --> <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+    </div>
+</div>
+
+
+<script type="text/html" id="checkbox-template">
+    <label data-bind="attr:{for:id, title:title}, css:{selected:value}">
+        <input data-bind="attr:{id:id},checked:value,enable:enable" type="checkbox">
+        <span data-bind="text:label"></span>
+    </label>
+</script>
+
+<script type="text/html" id="radio-template">
+    <fieldset class="fieldset">
+        <legend data-bind="text:header"></legend>
+        <div class="select-inline-block" data-bind="foreach:options">
+            <div>
+                <label data-bind="attr:{for:id, title:title}, css:{selected:selected}">
+                    <input type="radio" data-bind="attr:{id:id, name:$parent.name},
+                                                    checkedValue:$data,
+                                                    checked:$parent.selected,
+                                                    enable:enable">
+                    <span data-bind="text:label"></span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+</script>
+
+<script type="text/html" id="select-template">
+    <label>
+        <span data-bind="text:header"></span>
+        <select data-bind="attr:{id:id},
+                        options:options,
+                        optionsText:'label',
+                        value:selected,
+                        enable:enable"></select>
+    </label>
+</script>
+
+<script type="text/html" id="text-template">
+    <label data-bind="attr:{for:id}">
+        <span data-bind="text:label"></span>
+        <input data-bind="attr:{id:id,type:type},value:value,enable:enable"/>
+    </label>
+</script>
+
+<script type="text/html" id="assets-template">
+    <div class="row">
+        <div class="small-12 medium-5 large-12 columns">
+            <fieldset class="fieldset">
+                <legend>Defaults</legend>
+                <!-- ko template:{name:(checkboxItems.defaultPlaylist.type)+'-template',data:checkboxItems.defaultPlaylist} -->
+                <!-- /ko -->
+                <!-- ko template:{name:(checkboxItems.addLive.type)+'-template',data:checkboxItems.addLive} -->
+                <!-- /ko -->
+            </fieldset>
+        </div>
+        <div class="small-12 medium-7 large-12 columns">
+            <div class="row align-bottom">
+                <div class="small-12 medium-3 large-4 columns">
+                    <select data-bind="options:selectType,
+                                        optionsText:'label',
+                                        value:inputType">
+                    </select>
+                </div>
+                <div class="small-12 medium-9 large-8 columns">
+                    <label>Title / Label
+                        <input type="text" data-bind="textInput:inputLabel" placeholder="Lbl: Playlist #1">
+                    </label>
+                </div>
+                <div class="small-12 medium-9 large-12 columns">
+                    <label>Add Media Asset or Playlist Id/Url
+                        <input type="text" data-bind="textInput:inputText" placeholder="Id: nnd_18424824">
+                    </label>
+                </div>
+                <div class="small-12 medium-3 large-12 columns">
+                    <a href="#" class="button small" title="Add Item to List" data-bind="click:add">&plus; Add Item</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <fieldset class="fieldset">
+        <legend data-bind="text:'Current Assets '+listItems().length"></legend>
+        <ul data-bind="foreach:listItems">
+            <li class="row">
+                <a class="shrink columns button tiny postfix alert" href="#"
+                   data-bind="click:$parent.remove">&cross;</a>
+                <div class="columns align-self-middle">
+                    <span data-bind="text:label"></span> &nbsp;
+                    [<span data-bind="text:type"></span>:<span data-bind="text:input"></span>]
+                </div>
+            </li>
+        </ul>
+    </fieldset>
+    <button type="button" class="button expanded" data-bind="click:update">Update & Request Assets</button>
+</script>

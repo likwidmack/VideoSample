@@ -1,0 +1,1 @@
+window.ndp_ADBLOCK = true;

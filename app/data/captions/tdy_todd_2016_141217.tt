@@ -1,0 +1,476 @@
+<tt xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt" xmlns:m608="http://www.smpte-ra.org/schemas/xxxx/2009/smpte-tt#cea608" xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <ttm:desc>Caption file from NBC News</ttm:desc>
+    <ttm:copyright>Copyright (C) NBC News.</ttm:copyright>
+    <styling>
+      <style xml:id="s1" tts:backgroundColor="rgba(0,0,0,255)" tts:color="rgba(255,255,255,255)" tts:fontFamily="proportionalSansSerif" />
+    </styling>
+    <layout>
+      <region xml:id="r1" tts:showBackground="whenActive" tts:origin="10% 80%" tts:extent="80% 15%" tts:textAlign="center" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p begin="00:00:03:09" end="00:00:05:08" region="r1" style="s1">
+        <span>&gt;&gt; AND THAT'S YOUR LATEST 
+ </span>
+      </p>
+      <p begin="00:00:05:08" end="00:00:06:18" region="r1" style="s1">
+        <span>WEATHER, SAVANNAH 
+ </span>
+      </p>
+      <p begin="00:00:06:18" end="00:00:07:23" region="r1" style="s1">
+        <span>&gt;&gt; AL, THANK YOU VERY MUCH. 
+ </span>
+      </p>
+      <p begin="00:00:07:23" end="00:00:09:19" region="r1" style="s1">
+        <span>&gt;&gt;&gt; IT IS 2014, AS WE KNOW, NOT 
+ </span>
+      </p>
+      <p begin="00:00:09:19" end="00:00:11:05" region="r1" style="s1">
+        <span>TOO EARLY TO TALK ABOUT THE 2016
+ </span>
+      </p>
+      <p begin="00:00:11:05" end="00:00:11:24" region="r1" style="s1">
+        <span>RACE FOR THE WHITE HOUSE. 
+ </span>
+      </p>
+      <p begin="00:00:11:24" end="00:00:13:05" region="r1" style="s1">
+        <span>IT IS HEATING UP NOW. 
+ </span>
+      </p>
+      <p begin="00:00:13:05" end="00:00:14:11" region="r1" style="s1">
+        <span>FORMER FLORIDA GOVERNOR, JEB 
+ </span>
+      </p>
+      <p begin="00:00:14:11" end="00:00:15:23" region="r1" style="s1">
+        <span>BUSH, HAS TAKEN A BIG STEP 
+ </span>
+      </p>
+      <p begin="00:00:15:23" end="00:00:17:04" region="r1" style="s1">
+        <span>TOWARD SEEKING THE REPUBLICAN 
+ </span>
+      </p>
+      <p begin="00:00:17:04" end="00:00:18:11" region="r1" style="s1">
+        <span>NOMINATION, ANNOUNCING ON 
+ </span>
+      </p>
+      <p begin="00:00:18:11" end="00:00:20:22" region="r1" style="s1">
+        <span>FACEBOOK HE HAS DECIDED TO 
+ </span>
+      </p>
+      <p begin="00:00:20:22" end="00:00:21:10" region="r1" style="s1">
+        <span>"ACTIVELY EXPLORE THE 
+ </span>
+      </p>
+      <p begin="00:00:21:10" end="00:00:23:06" region="r1" style="s1">
+        <span>POSSIBILITY OF RUNNING" AND HE 
+ </span>
+      </p>
+      <p begin="00:00:23:06" end="00:00:24:29" region="r1" style="s1">
+        <span>HAD MORE TO SAY TO OUR MIAMI 
+ </span>
+      </p>
+      <p begin="00:00:24:29" end="00:00:26:01" region="r1" style="s1">
+        <span>STATION, WTVJ.
+ </span>
+      </p>
+      <p begin="00:00:26:01" end="00:00:26:23" region="r1" style="s1">
+        <span>TAKE A LISTEN.
+ </span>
+      </p>
+      <p begin="00:00:26:23" end="00:00:29:16" region="r1" style="s1">
+        <span>&gt;&gt; IF I CAN GET COMFORTABLE WITH
+ </span>
+      </p>
+      <p begin="00:00:29:16" end="00:00:31:02" region="r1" style="s1">
+        <span>BEING A CANDIDATE THAT GIVES 
+ </span>
+      </p>
+      <p begin="00:00:31:02" end="00:00:33:26" region="r1" style="s1">
+        <span>PEOPLE HOPE THAT WE CAN FIX SOME
+ </span>
+      </p>
+      <p begin="00:00:33:26" end="00:00:34:18" region="r1" style="s1">
+        <span>OF THESE PROBLEMS THAT WE HAVE 
+ </span>
+      </p>
+      <p begin="00:00:34:18" end="00:00:35:27" region="r1" style="s1">
+        <span>SO WE CAN TAKE ADVANTAGE OF OUR 
+ </span>
+      </p>
+      <p begin="00:00:35:27" end="00:00:37:02" region="r1" style="s1">
+        <span>OPPORTUNITIES THAT'S WHAT I'M 
+ </span>
+      </p>
+      <p begin="00:00:37:02" end="00:00:38:20" region="r1" style="s1">
+        <span>PURSUING IT IS NOT AN EASY 
+ </span>
+      </p>
+      <p begin="00:00:38:20" end="00:00:39:18" region="r1" style="s1">
+        <span>DECISION, BECAUSE IT IS A 
+ </span>
+      </p>
+      <p begin="00:00:39:18" end="00:00:40:17" region="r1" style="s1">
+        <span>LIFE-CHANGING ONE FOR A LONG 
+ </span>
+      </p>
+      <p begin="00:00:40:17" end="00:00:40:27" region="r1" style="s1">
+        <span>WHILE. 
+ </span>
+      </p>
+      <p begin="00:00:40:27" end="00:00:42:11" region="r1" style="s1">
+        <span>&gt;&gt; TURN TO CHUCK TODD, NBC'S 
+ </span>
+      </p>
+      <p begin="00:00:42:11" end="00:00:44:13" region="r1" style="s1">
+        <span>POLITICAL DIRECTOR, MODERATOR OF
+ </span>
+      </p>
+      <p begin="00:00:44:13" end="00:00:44:28" region="r1" style="s1">
+        <span>"MEET THE PRESS."
+ </span>
+      </p>
+      <p begin="00:00:44:28" end="00:00:45:24" region="r1" style="s1">
+        <span>WE ARE IN THE "MEET THE PRESS" 
+ </span>
+      </p>
+      <p begin="00:00:45:24" end="00:00:46:13" region="r1" style="s1">
+        <span>STUDIO NOW. 
+ </span>
+      </p>
+      <p begin="00:00:46:13" end="00:00:47:02" region="r1" style="s1">
+        <span>&gt;&gt; YEP.
+ </span>
+      </p>
+      <p begin="00:00:47:02" end="00:00:49:11" region="r1" style="s1">
+        <span>&gt;&gt; SO, JEB HAS DIPPED HIS TOE IN
+ </span>
+      </p>
+      <p begin="00:00:49:11" end="00:00:51:18" region="r1" style="s1">
+        <span>THE PRESIDENTIAL WATERS. 
+ </span>
+      </p>
+      <p begin="00:00:51:18" end="00:00:52:03" region="r1" style="s1">
+        <span>&gt;&gt; DIPPED HIS TOE?
+ </span>
+      </p>
+      <p begin="00:00:52:03" end="00:00:52:24" region="r1" style="s1">
+        <span>&gt;&gt; MAYBE HIS WHOLE FOOT?
+ </span>
+      </p>
+      <p begin="00:00:52:24" end="00:00:54:02" region="r1" style="s1">
+        <span>&gt;&gt; THIS IS BASICALLY -- YOU 
+ </span>
+      </p>
+      <p begin="00:00:54:02" end="00:00:55:15" region="r1" style="s1">
+        <span>DON'T ANNOUNCE YOU'RE EXPLORING 
+ </span>
+      </p>
+      <p begin="00:00:55:15" end="00:00:58:22" region="r1" style="s1">
+        <span>AND THEN NOT RUN.
+ </span>
+      </p>
+      <p begin="00:00:58:22" end="00:00:59:13" region="r1" style="s1">
+        <span>MOST OF THE TIME, MEANS YOUR 
+ </span>
+      </p>
+      <p begin="00:00:59:13" end="00:01:00:07" region="r1" style="s1">
+        <span>AGENCIES MORING, YOU'RE N 
+ </span>
+      </p>
+      <p begin="00:01:00:07" end="00:01:01:09" region="r1" style="s1">
+        <span>&gt;&gt; NEW POLL NUMBERS THIS 
+ </span>
+      </p>
+      <p begin="00:01:01:09" end="00:01:04:17" region="r1" style="s1">
+        <span>MORNING, YOU POLLED JEB BUSH, 
+ </span>
+      </p>
+      <p begin="00:01:04:17" end="00:01:07:16" region="r1" style="s1">
+        <span>POLL ALL THE REPUBLICAN 
+ </span>
+      </p>
+      <p begin="00:01:07:16" end="00:01:07:29" region="r1" style="s1">
+        <span>FRONT-RUNNER. 
+ </span>
+      </p>
+      <p begin="00:01:07:29" end="00:01:08:20" region="r1" style="s1">
+        <span>31% YES. 
+ </span>
+      </p>
+      <p begin="00:01:08:20" end="00:01:11:22" region="r1" style="s1">
+        <span>&gt;&gt; THE 57 YOU HAVE TO WONDER 
+ </span>
+      </p>
+      <p begin="00:01:11:22" end="00:01:13:02" region="r1" style="s1">
+        <span>ABOUT A LITTLE BIT BECAUSE SOME 
+ </span>
+      </p>
+      <p begin="00:01:13:02" end="00:01:14:15" region="r1" style="s1">
+        <span>OF IT IS CONSERVATIVE 
+ </span>
+      </p>
+      <p begin="00:01:14:15" end="00:01:15:27" region="r1" style="s1">
+        <span>REPUBLICANS THAT IS THE 
+ </span>
+      </p>
+      <p begin="00:01:15:27" end="00:01:16:28" region="r1" style="s1">
+        <span>REASONING IN HIS HEAD WHY HE 
+ </span>
+      </p>
+      <p begin="00:01:16:28" end="00:01:18:26" region="r1" style="s1">
+        <span>WENT EARLY, HE'S WORK TO DO TO 
+ </span>
+      </p>
+      <p begin="00:01:18:26" end="00:01:20:19" region="r1" style="s1">
+        <span>WIN OVER SCEPTICAL CONSERVATIVES
+ </span>
+      </p>
+      <p begin="00:01:20:19" end="00:01:22:03" region="r1" style="s1">
+        <span>WHO SILT THERE AND SAY WE WENT 
+ </span>
+      </p>
+      <p begin="00:01:22:03" end="00:01:23:22" region="r1" style="s1">
+        <span>WITH ONE BUSH, HE LET US DOWN, 
+ </span>
+      </p>
+      <p begin="00:01:23:22" end="00:01:25:07" region="r1" style="s1">
+        <span>WE WENT WITH A SECOND BUSH, HE 
+ </span>
+      </p>
+      <p begin="00:01:25:07" end="00:01:26:09" region="r1" style="s1">
+        <span>LET US DOWN. 
+ </span>
+      </p>
+      <p begin="00:01:26:09" end="00:01:27:28" region="r1" style="s1">
+        <span>WHY SHOULD WE BELIEVE THE THIRD 
+ </span>
+      </p>
+      <p begin="00:01:27:28" end="00:01:33:19" region="r1" style="s1">
+        <span>BUSH, EVEN MORE CONSERVATIVE IN 
+ </span>
+      </p>
+      <p begin="00:01:33:19" end="00:01:34:11" region="r1" style="s1">
+        <span>HIS LIFE, WHY SHOULD WE BELIEVE 
+ </span>
+      </p>
+      <p begin="00:01:34:11" end="00:01:35:02" region="r1" style="s1">
+        <span>HE WILL BE MORE CONSERVATIVE?
+ </span>
+      </p>
+      <p begin="00:01:35:02" end="00:01:35:25" region="r1" style="s1">
+        <span>&gt;&gt; TAKEN THE POSITIONS OUTSIDE 
+ </span>
+      </p>
+      <p begin="00:01:35:25" end="00:01:36:26" region="r1" style="s1">
+        <span>CONSERVATIVE ACTIVISTS?
+ </span>
+      </p>
+      <p begin="00:01:36:26" end="00:01:40:14" region="r1" style="s1">
+        <span>&gt;&gt; THAT'S RIGHT, IMMIGRATION, 
+ </span>
+      </p>
+      <p begin="00:01:40:14" end="00:01:41:06" region="r1" style="s1">
+        <span>EDUCATION, COMMON CORE, THOSE 
+ </span>
+      </p>
+      <p begin="00:01:41:06" end="00:01:41:20" region="r1" style="s1">
+        <span>ARE THE ONES. 
+ </span>
+      </p>
+      <p begin="00:01:41:20" end="00:01:43:15" region="r1" style="s1">
+        <span>HE SAID HE WILL BE A BULWARK 
+ </span>
+      </p>
+      <p begin="00:01:43:15" end="00:01:44:02" region="r1" style="s1">
+        <span>ABOUT IT. 
+ </span>
+      </p>
+      <p begin="00:01:44:02" end="00:01:45:23" region="r1" style="s1">
+        <span>I'M NOT GOING TO PLACATE 
+ </span>
+      </p>
+      <p begin="00:01:45:23" end="00:01:47:00" region="r1" style="s1">
+        <span>CONSERVATIVES ON THOSE TWO 
+ </span>
+      </p>
+      <p begin="00:01:47:00" end="00:01:49:09" region="r1" style="s1">
+        <span>ISSUES, GUESS WHAT?
+ </span>
+      </p>
+      <p begin="00:01:49:09" end="00:01:49:29" region="r1" style="s1">
+        <span>THEY COULD REALLY BURN HIM. 
+ </span>
+      </p>
+      <p begin="00:01:49:29" end="00:01:51:12" region="r1" style="s1">
+        <span>&gt;&gt; AS WE ROLL THROUGH THE 
+ </span>
+      </p>
+      <p begin="00:01:51:12" end="00:01:52:05" region="r1" style="s1">
+        <span>NUMBERS, MITT ROMNEY LOOKS LIKE 
+ </span>
+      </p>
+      <p begin="00:01:52:05" end="00:01:54:13" region="r1" style="s1">
+        <span>AS A 2016, APPARENTLY, HE IS 
+ </span>
+      </p>
+      <p begin="00:01:54:13" end="00:01:55:08" region="r1" style="s1">
+        <span>REALLY CONSIDERING IT?
+ </span>
+      </p>
+      <p begin="00:01:55:08" end="00:01:57:16" region="r1" style="s1">
+        <span>&gt;&gt; I TELL YOU THOUGH, THIS IS 
+ </span>
+      </p>
+      <p begin="00:01:57:16" end="00:01:58:27" region="r1" style="s1">
+        <span>ANOTHER IMPACT OF JEB BUSH'S 
+ </span>
+      </p>
+      <p begin="00:01:58:27" end="00:02:00:09" region="r1" style="s1">
+        <span>EARLY DECISION, I THINK THIS 
+ </span>
+      </p>
+      <p begin="00:02:00:09" end="00:02:02:04" region="r1" style="s1">
+        <span>TAKES ALL THE AIR OUT OF THIS 
+ </span>
+      </p>
+      <p begin="00:02:02:04" end="00:02:05:02" region="r1" style="s1">
+        <span>QUIET BALLOON THAT WAS INFLATING
+ </span>
+      </p>
+      <p begin="00:02:05:02" end="00:02:06:17" region="r1" style="s1">
+        <span>FOR MITT ROMNEY AND A LOT OF BIG
+ </span>
+      </p>
+      <p begin="00:02:06:17" end="00:02:08:06" region="r1" style="s1">
+        <span>DONORS THAT SAID, YOU KNOW WHAT,
+ </span>
+      </p>
+      <p begin="00:02:08:06" end="00:02:09:15" region="r1" style="s1">
+        <span>MAYBE WE SHOULD JUST RALLY 
+ </span>
+      </p>
+      <p begin="00:02:09:15" end="00:02:10:09" region="r1" style="s1">
+        <span>AROUND ROMNEY. 
+ </span>
+      </p>
+      <p begin="00:02:10:09" end="00:02:12:01" region="r1" style="s1">
+        <span>BUT JEB GETTING IN, I THINK THIS
+ </span>
+      </p>
+      <p begin="00:02:12:01" end="00:02:13:14" region="r1" style="s1">
+        <span>DRIES UP THE ROMNEY SUPPORT. 
+ </span>
+      </p>
+      <p begin="00:02:13:14" end="00:02:15:19" region="r1" style="s1">
+        <span>&gt;&gt; TALK ABOUT THE DEMOCRATS. 
+ </span>
+      </p>
+      <p begin="00:02:15:19" end="00:02:16:15" region="r1" style="s1">
+        <span>OBVIOUSLY, PRETTY CLEAR HILLARY 
+ </span>
+      </p>
+      <p begin="00:02:16:15" end="00:02:17:14" region="r1" style="s1">
+        <span>CLINTON IS RUNNING, WE WILL ALL 
+ </span>
+      </p>
+      <p begin="00:02:17:14" end="00:02:18:26" region="r1" style="s1">
+        <span>WAIT FOR AN OFFICIAL 
+ </span>
+      </p>
+      <p begin="00:02:18:26" end="00:02:19:09" region="r1" style="s1">
+        <span>ANNOUNCEMENT. 
+ </span>
+      </p>
+      <p begin="00:02:19:09" end="00:02:21:19" region="r1" style="s1">
+        <span>SHE POLLS VERY, VERY WELL, AS 
+ </span>
+      </p>
+      <p begin="00:02:21:19" end="00:02:22:05" region="r1" style="s1">
+        <span>YOU CAN SEE. 
+ </span>
+      </p>
+      <p begin="00:02:22:05" end="00:02:22:22" region="r1" style="s1">
+        <span>&gt;&gt; POLL -- 
+ </span>
+      </p>
+      <p begin="00:02:22:22" end="00:02:24:21" region="r1" style="s1">
+        <span>&gt;&gt; GENERAL ELECTION. 
+ </span>
+      </p>
+      <p begin="00:02:24:21" end="00:02:25:02" region="r1" style="s1">
+        <span>EXACTLY. 
+ </span>
+      </p>
+      <p begin="00:02:25:02" end="00:02:25:25" region="r1" style="s1">
+        <span>THIS REFLECT THE COUNTRY.
+ </span>
+      </p>
+      <p begin="00:02:25:25" end="00:02:26:29" region="r1" style="s1">
+        <span>&gt;&gt; REFLECTS THE COUNTRY. 
+ </span>
+      </p>
+      <p begin="00:02:26:29" end="00:02:29:20" region="r1" style="s1">
+        <span>WHAT YOU WOULD EXPECT IF SHE ONE
+ </span>
+      </p>
+      <p begin="00:02:29:20" end="00:02:30:27" region="r1" style="s1">
+        <span>OR LOSS, BOO I A POINT OR TWO 
+ </span>
+      </p>
+      <p begin="00:02:30:27" end="00:02:33:04" region="r1" style="s1">
+        <span>&gt;&gt; A POLL NUMBER THAT MIGHT BE 
+ </span>
+      </p>
+      <p begin="00:02:33:04" end="00:02:34:08" region="r1" style="s1">
+        <span>TROUBLE FOR HILLARY CLINTON 
+ </span>
+      </p>
+      <p begin="00:02:34:08" end="00:02:36:29" region="r1" style="s1">
+        <span>CANDIDACY THAT 71% WANT A 
+ </span>
+      </p>
+      <p begin="00:02:36:29" end="00:02:37:28" region="r1" style="s1">
+        <span>DIRECTION FOR THE COUNTRY 
+ </span>
+      </p>
+      <p begin="00:02:37:28" end="00:02:38:22" region="r1" style="s1">
+        <span>DIFFERENT THAN PRESIDENT OBAMA. 
+ </span>
+      </p>
+      <p begin="00:02:38:22" end="00:02:39:23" region="r1" style="s1">
+        <span>&gt;&gt; THIS IS GOING TO BE HER 
+ </span>
+      </p>
+      <p begin="00:02:39:23" end="00:02:40:10" region="r1" style="s1">
+        <span>CHALLENGE, RIGHT?
+ </span>
+      </p>
+      <p begin="00:02:40:10" end="00:02:42:10" region="r1" style="s1">
+        <span>SHE HAS TO WALK THAT LINE OF 
+ </span>
+      </p>
+      <p begin="00:02:42:10" end="00:02:43:27" region="r1" style="s1">
+        <span>CHANGE AND YET CONTINUITY WITH 
+ </span>
+      </p>
+      <p begin="00:02:43:27" end="00:02:44:17" region="r1" style="s1">
+        <span>OBAMA.
+ </span>
+      </p>
+      <p begin="00:02:44:17" end="00:02:46:14" region="r1" style="s1">
+        <span>BY THE WAY, THE BIG JEB BUSH 
+ </span>
+      </p>
+      <p begin="00:02:46:14" end="00:02:48:13" region="r1" style="s1">
+        <span>ANNOUNCEMENT HELPS HILLARY, IT 
+ </span>
+      </p>
+      <p begin="00:02:48:13" end="00:02:50:03" region="r1" style="s1">
+        <span>WILL SCARE DEMOCRATS AND RALLY 
+ </span>
+      </p>
+    </div>
+  </body>
+</tt>
