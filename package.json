@@ -1,13 +1,13 @@
 {
-  "name": "ndp-video-spa",
+  "name": "video-spa",
   "version": "0.0.29",
-  "description": "NDP Video Development Test Pages",
+  "description": "Video Development Test Pages",
   "private": true,
   "main": "index.js",
   "config": {
     "port": 9005,
-    "build": "v0.0.29-1-gdf19594",
-    "timestamp": 1490398440010
+    "build": "6975556",
+    "timestamp": 1490418815346
   },
   "engines": {
     "node": "0.12.7",
