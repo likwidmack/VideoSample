@@ -10,9 +10,9 @@ $ndp.configuration = {
     freewheel: {
         adManagerUrl: location.protocol + "//media1.s-nbcnews.com/i/videoassets/pdk/vendor/AdManager-6.5.0.r1.{ext}",
         logLevel: 2,
-        nativeProfileId: "nbcnews_html5_live",
+        nativeProfileId: "nbcnews_html5_live_https",
         network: 171224,
-        playerProfile: "nbcnews_{runtime}_live",
+        playerProfile: "nbcnews_{runtime}_live_https",
         requestTimeout: 7000,
         siteSection: "Today_Show_2015_Test_Site_Section",
         siteSectionFallbackID: 853951,
